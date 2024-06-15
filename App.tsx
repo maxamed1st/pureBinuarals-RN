@@ -1,9 +1,9 @@
-import { Text, View } from 'react-native';
+import CreateBeat from '@/CreateBeat';
 
 export default function App() {
+  const baseFrequency: number = 440;
+  const desiredFrequency: number = 30;
   return (
-    <View tw="flex-1 bg-white items-center justify-center">
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <CreateBeat baseFrequency={baseFrequency} desiredFrequency={desiredFrequency}/>
   );
 }
